@@ -120,7 +120,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="f8N-O4-fpa">
-                        <barButtonItem key="rightBarButtonItem" title="Add" id="H4r-xL-u07">
+                        <barButtonItem key="rightBarButtonItem" title="追加" id="H4r-xL-u07">
                             <connections>
                                 <segue destination="Ia0-a7-5O9" kind="show" id="clt-WH-2pB"/>
                             </connections>
