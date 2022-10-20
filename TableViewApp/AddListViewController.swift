@@ -24,6 +24,7 @@ class AddListViewController: UIViewController {
     }
     
     @IBAction func addTask(_ sender: Any) {
+        if addText.text != "" {
         let userDefaults = UserDefaults.standard //そのままだと長いので変数にいれる
 
         taskArray.append(addText.text!) //addTextで記入されたテキストを入れる
@@ -31,6 +32,8 @@ class AddListViewController: UIViewController {
         userDefaults.set(taskArray, forKey: "add") //キー"add"で配列をUserDefaultsに保存
 
         self.navigationController?.popViewController(animated: true) //1つ前の画面に戻る
+        
+        
     }
     
     /*
@@ -43,4 +46,5 @@ class AddListViewController: UIViewController {
     }
     */
 
+}
 }
